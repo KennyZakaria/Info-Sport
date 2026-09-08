@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terrain - Visualisation équipes</title>
+  <link rel="stylesheet" href="/field.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Terrain - Visualisation</h1>
+    <p class="hint">Indiquez `?matchId=<id>` pour charger un match depuis l'API. Sinon démonstration locale.</p>
+
+    <div id="pitch" class="pitch">
+      <div class="team team-left">
+        <h2>SIGR-1</h2>
+        <div id="teamA" class="players"></div>
+      </div>
+
+      <div class="midline"></div>
+
+      <div class="team team-right">
+        <h2>SIGR-2</h2>
+        <div id="teamB" class="players"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label>Match ID: <input id="matchId" placeholder="optional" /></label>
+      <button id="loadBtn">Charger</button>
+      <button id="demoBtn">Démonstration</button>
+    </div>
+  </div>
+
+  <script src="/field.js"></script>
+</body>
+</html>
